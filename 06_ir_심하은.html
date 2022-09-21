@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리</title>
+    <style type="text/css">
+        body,h1,h2,h3,p,div,ul,li {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+        ul,li {
+            list-style:none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        address {
+            font-style: normal;
+        }
+
+        .blind {
+            position:absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin:-1px;
+            overflow: hidden;
+        }
+        .screen_out {
+            overflow: hidden;
+            position: absolute;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            text-indent: -9999px;
+        }
+        .hide {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+        /* logo */
+        .logo {
+            width: 122px;
+            height: 89px;
+
+            /* border:1px solid red; */
+        }
+        .logo a {
+            display: block;
+            width: 122px;height: 89px;
+            background: url(images/logo.jpg);
+            text-indent: -9999px;
+            /* border:1px solid black; */
+        }
+        /* gnb */
+        .menu1 a {
+            width: 90px;height: 30px;
+            background: url(images/category.jpg);
+            text-indent: -9999px;
+            display: block;
+            }
+        .menu2 a {
+             width: 65px;height: 30px;
+             background: url(images/new.jpeg)no-repeat;
+             text-indent: -9999px;
+             display: block;
+            }
+        .menu3 a {
+            width: 64px;height: 30px;
+            background: url(images/best.jpg) no-repeat;
+            text-indent: -9999px;
+            display: block;
+            }
+            
+        .menu4 a {
+            width: 84px;height: 30px;
+            background: url(images/atshopping.jpg)no-repeat;
+            text-indent: -9999px;
+            display: block;
+            }
+        .menu5 a {
+            width: 100px;height: 30px;
+            background: url(images/special_price.jpg)no-repeat;
+            text-indent: -9999px;
+            display: block;
+            }
+        /* main image */
+        .main_image {
+            width: 800px;height: 342px;
+            background: url(images/main_image.jpg) no-repeat;
+            text-indent: -9999px;
+            display: block;
+        }
+        /* goods */
+        .goods h2 {
+            width: 1999px; height: 74px;
+            background: url(images/recommend_goods.jpg);
+            text-indent: -9999px;
+        }
+        .goods1 {
+            width: 250px;height: 320px;
+            box-sizing: border-box;
+
+        }
+        .goods1 a {
+            width: 250px;height: 320px;
+            background: url(images/goods01.jpeg) no-repeat;
+        }
+        /* content */
+        .content {
+            width: 800px;
+            height: 150px;
+            position: relative;
+        }
+        .content a {
+            width: 800px;
+            height: 150px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+    <h1 class="logo"><a href="#">Market Kurly</a></h1>
+
+    <nav class="gnb">
+        <h2 class="blind">주요 메뉴</h2>
+        <ul>
+            <li class="menu1"><a href="#">카테고리</a></li>
+            <li class="menu2"><a href="#">신상품</a></li>
+            <li class="menu3"><a href="#">베스트</a></li>
+            <li class="menu4"><a href="#">알뜰쇼핑</a></li>
+            <li class="menu5"><a href="#">특가/혜택</a></li>
+        </ul>
+    </nav>
+    
+    <div class="top_menu">
+        <h2 class="screen_out">사용자 메뉴</h2>
+        <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">ㅇㅇㅇ님</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </div>
+</header>
+
+<main id="content" class="content">
+    <section class="main_image">
+        <h2 class="hide">메인 이미지</h2>
+        <p>8월의 뷰티 브랜드 데이</p>
+        <p>:라로슈포제</p>
+        <p>단 24시최동안, 최대 30% 할인!</p>
+    </section>
+    
+    <section class="goods">
+        <h2>이 상품 어때요?</h2>
+        <ul>    
+            <li class="goods1"><a href="#">버터와플 237g 3,780원</a></li> 
+            <li class="goods2"><a href="#">[크라운] 빅파이 딸기 324g 3,680원</a></li> 
+            <li class="goods3"><a href="#">[종가집] 꼬들단무지 220g</a></li> 
+            <li class="goods4"><a href="#">[만토바] 기버터 스프레이 오일</a></li> 
+        </ul>
+        <p>캠핑용품&정육 최대 42% 할인
+            캠핑 체어부터 구이바다까지</p>
+            
+            
+            <h2>놓치면 후회할 가격 ></h2>
+            <ul>   
+                <li><a href="#">[별천지]불 오징어볶음 300g (냉동)
+                    20% 6,300원 7,900원</a></li>
+                    <li><a href="#"></a>[동국제약] 센텔리안24 더 마데카크림 기획세트(45ml*2개입+사셰3...)
+                        52% 23,800원~
+                        50,000원~ </a></li>
+                        <li><a href="#"> [마이노멀] 방탄모카 6개입
+                            11% 12,800원</a></li>
+                            <li><a href="#"></a>[홍대주꾸미]주꾸미 볶음 300g(냉동) 7,900원</a></li>
+                        </ul>    
+    </section>
+    <section class="content">
+        
+        <h2 class="hide">새벽배송 배너</h2>
+        <p><a href="#"> 앞까지 신선하게, 퀄리티 있게 배송!<br>
+            샛별 택배 배송안내 보기</a></p>
+            
+            <h3>일일특가</h3>
+            <h4>24시간 한정 특가</h4>
+            <p>12:00:00<br>
+                망설이면 늦어요!</p>
+                
+                <p>주7일 하루 한봉씩 총 42봉의 매일 견과<br>
+                    HBAF 매일 색다른 먼투썬 하루견과 6주 (20gX42봉)<br>
+                    30% 23,730원 ~</p>
+                    
+                    <h2>Kurly Only 추천 상품 ></h2>
+                    <ul>
+                        <li><a href="#">[일상미소] 부채살 200g (냉장) 10,740원</a></li>
+                        <li><a href="#">[KF365] 1+등급 무항생제 특란 10구 3800원</a></li>
+                        <li><a href="#">모노키친 베이징풍 찹쌀탕수육 35% 5,785원</a></li>
+                    </ul>
+    </section>
+    <section class="rank">
+        <h2>오늘의 카테고리 랭킹</h2>
+        <ul>   
+            <li><a href="#">간편식 TOP 50</a></li>
+            <li><a href="#">간식 TOP 50</a></li>
+            <li><a href="#">베이커리 TOP 50</a></li>
+            <li><a href="#">뷰티 TOP 50</a></li>
+            <li><a href="#">주방 TOP 50</a></li>
+            <li><a href="#">국반찬 TOP 50</a></li>
+            
+            <li><a href="#">[정호영셰프의 우동카덴] 명란크림우동 9,500원</a></li>
+            <li><a href="#">[하림] 에어프라이어 수제 닭똥집튀김 400g</a></li>
+            <li><a href="#">[놉스] 치즈듬뿍 비프 라자냐 10,900원</a></li>
+            <li><a href="#">[이연복의 떡볶이]마라 로제 떡볶이 40% 5,880원 9,800원</a></li>
+    </section>
+        </ul> 
+                                
+        <h3>간편식 TOP 50 전체보기</h3>
+                                
+        <h3>인스타그램 고객 후기</h3>
+    </main>
+    <footer id="footer" class="footer">
+                         
+            <h2 class="hide">사이트 이용 안내</h2>
+            
+            <div class="term">
+            <ul>       
+                <li><a href="#">컬리소개</a></li>
+                <li><a href="#">컬리소개영상</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>  
+            </div>
+
+            <p>법인명 (상호): 주식회사 컬리 | 사업자등록번호:261-81-23567 사업자정보 확인</p>
+            <p>통신판매업: 제 2018-서울강남-01646호 | 개인정보보호책임자: 이원준</p>
+            <address>주소: 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사: 김슬아</address>
+            <p>입점문의: 입점문의하기 | 제휴문의: business@kurlycorp.com</p>
+            <p>채용문의:recruit@kurlycorp.com</p>
+            <p>팩스: 070-7500-6098</p>
+            
+            <p>고객행복센터 365일 오전7시 - 오후7시<p>
+            <p>1644-1107<p>
+            <p>카카오톡 문의 <p>
+            <p>1:1 문의<p>
+            <p>대량주문 문의<p>
+                                                    
+            <p>비회원 문의: help@kurlycorp.com</p>
+            <p>비회원 대량주문 문의: kurlygift@kurlycorp.com</p>
+        </footer>
+                                                    
+</body>
+</html>
